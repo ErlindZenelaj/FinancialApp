@@ -7,8 +7,8 @@
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="FinancialApp" expanded="True" selected="True">
-            <Node name="FinancialApp" expanded="True" />
+          <Node name="FinancialApp" expanded="True">
+            <Node name="FinancialApp" expanded="True" selected="True" />
           </Node>
         </State>
       </Pad>
