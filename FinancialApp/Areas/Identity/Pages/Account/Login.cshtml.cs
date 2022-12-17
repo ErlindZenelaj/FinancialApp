@@ -125,11 +125,11 @@ namespace FinancialApp.Areas.Identity.Pages.Account
                 {
                     var claims = new Claim[]
                     {
-                        new Claim("amr", "pwd")
+                        new Claim("amr", "pwd"),
                     };
 
-                    await _signInManager.SignInWithClaimsAsync(user, Input.RememberMe, new Claim[] { new Claim("amr", "pwd") });
-
+                    await _signInManager.SignInWithClaimsAsync(user, Input.RememberMe, claims);
+                     
                     _logger.LogInformation("User  logged  in.");
                     return LocalRedirect(returnUrl);
                 }
