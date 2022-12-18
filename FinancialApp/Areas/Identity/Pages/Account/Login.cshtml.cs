@@ -123,10 +123,19 @@ namespace FinancialApp.Areas.Identity.Pages.Account
                 var result = await _signInManager.CheckPasswordSignInAsync(user, Input.Password, false);
                 if (result.Succeeded)
                 {
-                    var claims = new Claim[]
+                    var claims = new List<Claim>
                     {
                         new Claim("amr", "pwd"),
                     };
+
+                    var roles = await _signInManager.UserManager.GetRolesAsync(user);
+
+                    if (roles.Any())
+                    {
+                        //"Manager,User"
+                        var roleClaim = string.Join(",", roles);
+                        claims.Add(new Claim("Roles", roleClaim));
+                    } 
 
                     await _signInManager.SignInWithClaimsAsync(user, Input.RememberMe, claims);
                      

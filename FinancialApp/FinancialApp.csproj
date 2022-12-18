@@ -11,6 +11,10 @@
     <None Remove="Microsoft.EntityFrameworkCore.Tools" />
     <None Remove="Views\Role\" />
     <None Remove="Views\RoleViews\" />
+    <None Remove="Views\User\" />
+    <None Remove="Core\Repositories\" />
+    <None Remove="Repositories\" />
+    <None Remove="Core\ViewModel\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.12" />
@@ -25,5 +29,9 @@
   <ItemGroup>
     <Folder Include="Views\Role\" />
     <Folder Include="Views\RoleViews\" />
+    <Folder Include="Views\User\" />
+    <Folder Include="Core\Repositories\" />
+    <Folder Include="Repositories\" />
+    <Folder Include="Core\ViewModel\" />
   </ItemGroup>
 </Project>

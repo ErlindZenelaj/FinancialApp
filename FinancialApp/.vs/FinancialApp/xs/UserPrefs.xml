@@ -1,22 +1,44 @@
 ﻿<Properties StartupConfiguration="{19011A29-6E4D-4B61-BB38-C971835948F2}|Default">
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/erlindzenelaj/Documents/GitHub/FinancialApp/FinancialApp/Controllers/UserController.cs" relfile="Controllers/UserController.cs" line="41" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Areas/Identity/Pages/Account/Login.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/UserController.cs">
     <Files>
-      <File FileName="Areas/Identity/Pages/Account/Login.cshtml" Line="2" Column="18" />
-      <File FileName="Areas/Identity/Pages/Account/Login.cshtml.cs" />
+      <File FileName="Views/User/Index.cshtml" Line="44" Column="7" />
+      <File FileName="Controllers/UserController.cs" Line="42" Column="1" />
+      <File FileName="Core/Repositories/IUserRepository.cs" Line="11" Column="3" />
+      <File FileName="Repositories/UserRepository.cs" Line="16" Column="21" />
+      <File FileName="Views/User/Edit.cshtml" Line="57" Column="22" />
+      <File FileName="Core/ViewModel/EditUserViewModel.cs" Line="16" Column="1" />
+      <File FileName="Repositories/RoleRepository.cs" Line="20" Column="4" />
+      <File FileName="Core/Repositories/IUnitOfWork.cs" Line="8" Column="32" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="FinancialApp" expanded="True" selected="True">
+          <Node name="FinancialApp" expanded="True">
             <Node name="FinancialApp" expanded="True">
               <Node name="Areas" expanded="True">
                 <Node name="Identity" expanded="True">
-                  <Node name="Pages" expanded="True">
-                    <Node name="Account" expanded="True" />
-                  </Node>
+                  <Node name="Data" expanded="True" />
                 </Node>
+              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Core" expanded="True">
+                <Node name="Repositories" expanded="True" />
+                <Node name="ViewModel" expanded="True">
+                  <Node name="EditUserViewModel.cs" selected="True" />
+                </Node>
+              </Node>
+              <Node name="Repositories" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="RoleViews" expanded="True" />
+                <Node name="User" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -24,9 +46,5 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.FinancialApp PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>

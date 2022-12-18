@@ -1,7 +1,10 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using FinancialApp.Areas.Identity.Data;
-using Microsoft.VisualBasic;
+using FinancialApp.Core;
+using FinancialApp.Core.Repositories;
+using FinancialApp.Repositories;
+
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("ApplicationDbContextConnection");
@@ -22,6 +25,7 @@ AddAuthorizationPolicies();
 
 #endregion
 
+AddScoped();
 
 var app = builder.Build();
 
@@ -54,6 +58,21 @@ void AddAuthorizationPolicies()
     builder.Services.AddAuthorization(options =>
     {
         options.AddPolicy("EmployeeOnly", policy => policy.RequireClaim("EmployeeNumber"));
+    }); 
+
+    builder.Services.AddAuthorization(options =>
+    {
+        options.AddPolicy(Constants.Policies.RequireAdmin, policy => policy.RequireRole(Constants.Roles.Administrator));
+        options.AddPolicy(Constants.Policies.RequireManager, policy => policy.RequireRole(Constants.Roles.Manager));
+
+
     });
 
+}
+
+void AddScoped()
+{
+    builder.Services.AddScoped<IUserRepository, UserRepository>();
+    builder.Services.AddScoped<IRoleRepository, RoleRepository>();
+    builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 }

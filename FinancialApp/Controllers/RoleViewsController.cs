@@ -1,35 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using FinancialApp.Core;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using FinancialApp.Core;
 
-namespace FinancialApp.Controllers
+namespace ASP.NETCoreIdentityCustom.Controllers
 {
-    public class RoleController : Controller
+    public class RoleViewsController : Controller
     {
-
         public IActionResult Index()
         {
             return View();
         }
 
         [Authorize(Policy = Constants.Policies.RequireManager)]
-
         public IActionResult Manager()
         {
             return View();
-         }
+        }
 
-
-        [Authorize(Roles = $"{Constants.Roles.Administrator},{Constants.Roles.Manager}")]
-
+        [Authorize(Policy = "RequireAdmin")]
         public IActionResult Admin()
         {
             return View();
         }
     }
 }
-
