@@ -9,12 +9,12 @@
   <ItemGroup>
     <None Remove="Microsoft.VisualStudio.Web.CodeGeneration.Design" />
     <None Remove="Microsoft.EntityFrameworkCore.Tools" />
-    <None Remove="Views\Role\" />
-    <None Remove="Views\RoleViews\" />
-    <None Remove="Views\User\" />
     <None Remove="Core\Repositories\" />
     <None Remove="Repositories\" />
     <None Remove="Core\ViewModel\" />
+    <None Remove="System.Data.SqlClient" />
+    <None Remove="Views\" />
+    <None Remove="Areas\Identity\Pages\Clients\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.12" />
@@ -25,13 +25,13 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Views\Role\" />
-    <Folder Include="Views\RoleViews\" />
-    <Folder Include="Views\User\" />
     <Folder Include="Core\Repositories\" />
     <Folder Include="Repositories\" />
     <Folder Include="Core\ViewModel\" />
+    <Folder Include="Views\" />
+    <Folder Include="Areas\Identity\Pages\Clients\" />
   </ItemGroup>
 </Project>
