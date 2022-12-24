@@ -4,7 +4,7 @@ using FinancialApp.Areas.Identity.Data;
 using FinancialApp.Core;
 using FinancialApp.Core.Repositories;
 using FinancialApp.Repositories;
-
+using FinancialApp.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("ApplicationDbContextConnection");
@@ -19,6 +19,7 @@ builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.R
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+
 #region Authorization
 
 AddAuthorizationPolicies();
@@ -28,6 +29,7 @@ AddAuthorizationPolicies();
 AddScoped();
 
 var app = builder.Build();
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -75,4 +77,8 @@ void AddScoped()
     builder.Services.AddScoped<IUserRepository, UserRepository>();
     builder.Services.AddScoped<IRoleRepository, RoleRepository>();
     builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+    builder.Services.AddScoped<ICurrency, CurrencyRepo>();
+
+
 }
+

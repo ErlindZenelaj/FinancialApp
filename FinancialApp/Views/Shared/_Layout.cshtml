@@ -1,4 +1,4 @@
-﻿ @using Microsoft.AspNetCore.Identity
+﻿@using Microsoft.AspNetCore.Identity;
 @using FinancialApp.Areas.Identity.Data;
 
 
@@ -49,6 +49,7 @@
                                 </ul>
                             </li>
                         }
+            
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="Index">Users</a>
                         </li>
@@ -57,6 +58,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="Identity" asp-page="/Clients/Index">Clients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Currency" asp-action="Index">Currency</a>
                         </li>
                     </ul>
                 </div>
