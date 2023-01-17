@@ -1,11 +1,9 @@
-﻿
-
-using FinancialApp.Interfaces;
+﻿using FinancialApp.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc;
 using FinancialApp.Models;
-
+using Microsoft.Data.SqlClient;
 namespace FinancialApp.Controllers;
 
     [Authorize]
@@ -16,8 +14,8 @@ namespace FinancialApp.Controllers;
         public CurrencyController(ICurrency repo) // here the repository will be passed by the dependency injection.
         {
             _Repo = repo;
-        }
-
+        }  
+     
 
         public IActionResult Index(string sortExpression = "", string SearchText = "", int pg = 1, int pageSize = 5)
         {

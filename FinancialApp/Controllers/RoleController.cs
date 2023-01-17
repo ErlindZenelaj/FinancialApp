@@ -5,9 +5,12 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using FinancialApp.Core;
+using Microsoft.AspNetCore.Identity;
 
 namespace FinancialApp.Controllers
 {
+
+
     public class RoleController : Controller
     {
 
@@ -30,6 +33,9 @@ namespace FinancialApp.Controllers
         {
             return View();
         }
+
+
+        
     }
 }
 

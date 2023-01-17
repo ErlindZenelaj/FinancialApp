@@ -10637,26 +10637,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {}
+    "/Users/erlindzenelaj/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\FinancialApp\\FinancialApp\\FinancialApp.csproj",
+      "projectUniqueName": "/Users/erlindzenelaj/Documents/GitHub/FinancialApp/FinancialApp/FinancialApp.csproj",
       "projectName": "FinancialApp",
-      "projectPath": "C:\\Users\\User\\Documents\\GitHub\\FinancialApp\\FinancialApp\\FinancialApp.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Documents\\GitHub\\FinancialApp\\FinancialApp\\obj\\",
+      "projectPath": "/Users/erlindzenelaj/Documents/GitHub/FinancialApp/FinancialApp/FinancialApp.csproj",
+      "packagesPath": "/Users/erlindzenelaj/.nuget/packages/",
+      "outputPath": "/Users/erlindzenelaj/Documents/GitHub/FinancialApp/FinancialApp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/erlindzenelaj/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -10721,7 +10719,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
       }
     }
   }

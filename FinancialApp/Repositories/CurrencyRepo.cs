@@ -5,7 +5,8 @@ using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using System.Xml.Linq;
 
-namespace FinancialApp.Repositories
+
+namespace FinancialApp.Repositories 
 {
     public class CurrencyRepo : ICurrency
     {
@@ -19,7 +20,7 @@ namespace FinancialApp.Repositories
 
         public bool Create(Currency currency)
         {
-            try {
+             try {
 
                 //1.rule
                 if (!IsDescriptionValid(currency)) return false;
@@ -99,13 +100,12 @@ namespace FinancialApp.Repositories
                     items = items.OrderByDescending(d => d.Description).ToList();
             }
 
-            return items;
+            return items;  
         }
 
         public Currency GetItem(int id)
         {
            
-
              // Possible null assignment.
             Currency item = _context.Currencies.Where(u => u.Id == id).FirstOrDefault();
             return item;
@@ -170,12 +170,52 @@ namespace FinancialApp.Repositories
             }
             return true;
         }
-        private class FinancialAppContext
+
+
+
+        Currency ICurrency.GetItem(int id)
         {
-            internal void SaveChanges()
-            {
-                throw new NotImplementedException();
-            }
+            throw new NotImplementedException();
+        }
+
+        bool ICurrency.Create(Currency currency)
+        {
+            throw new NotImplementedException();
+        }
+
+        bool ICurrency.Edit(Currency currency)
+        {
+            throw new NotImplementedException();
+        }
+
+        bool ICurrency.Delete(Currency currency)
+        {
+            throw new NotImplementedException();
+        }
+
+        bool ICurrency.IsItemExists(string name)
+        {
+            throw new NotImplementedException();
+        }
+
+        bool ICurrency.IsItemExists(string name, int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        bool ICurrency.IsCurrencyCombExists(int srcCurrencyId, int exchangeCurrencyId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public PaginatedList<Currency> GetItems(object sortedProperty, object sortedOrder, string searchText, int pg, int pageSize)
+        {
+            throw new NotImplementedException();
+        }
+
+        public PaginatedList<Currency> GetItems(string sortedProperty, object sortedOrder, string searchText, int pg, int pageSize)
+        {
+            throw new NotImplementedException();
         }
     }
 }

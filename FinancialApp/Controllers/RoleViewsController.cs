@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ASP.NETCoreIdentityCustom.Controllers
+namespace FinancialApp.Controllers
 {
     public class RoleViewsController : Controller
     {
@@ -22,5 +22,8 @@ namespace ASP.NETCoreIdentityCustom.Controllers
         {
             return View();
         }
+
+       
+
     }
 }

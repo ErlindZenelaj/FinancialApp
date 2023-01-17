@@ -8,12 +8,15 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using FinancialApp.Areas.Identity.Data;
 using FinancialApp.Core.Repositories;
 using FinancialApp.Core.ViewModels;
+using Microsoft.AspNetCore.Authorization;
+using static FinancialApp.Core.Constants;
 
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace FinancialApp.Controllers
 {
+    
     public class UserController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
@@ -24,7 +27,8 @@ namespace FinancialApp.Controllers
             _unitOfWork = unitOfWork;
             _signInManager = signInManager;
         }
-         
+
+        [Authorize(Roles = "Administrator")]
         public IActionResult Index()
         {
             var users = _unitOfWork.User.GetUsers();
@@ -112,6 +116,8 @@ namespace FinancialApp.Controllers
 
             return RedirectToAction("Edit", new { id = user.Id });
         }
+
+
     }
 }
 

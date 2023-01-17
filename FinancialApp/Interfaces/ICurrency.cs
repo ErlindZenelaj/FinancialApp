@@ -22,6 +22,8 @@ namespace FinancialApp.Interfaces
         public bool IsCurrencyCombExists(int srcCurrencyId, int exchangeCurrencyId);
 
         public string GetErrors();
+        PaginatedList<Currency> GetItems(object sortedProperty, object sortedOrder, string searchText, int pg, int pageSize);
+        PaginatedList<Currency> GetItems(string sortedProperty, object sortedOrder, string searchText, int pg, int pageSize);
     }
 
     public class PaginatedList<T>
