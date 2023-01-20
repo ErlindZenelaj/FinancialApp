@@ -16,6 +16,7 @@
     <None Remove="Views\" />
     <None Remove="Areas\Identity\Pages\Clients\" />
     <None Remove="Microsoft.AspNetCore.Identity.EntityFrameworkCore" />
+    <None Remove="Views\EBill\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.12" />
@@ -32,5 +33,6 @@
     <Folder Include="Core\Repositories\" />
     <Folder Include="Core\ViewModel\" />
     <Folder Include="Areas\Identity\Pages\Clients\" />
+    <Folder Include="Views\EBill\" />
   </ItemGroup>
 </Project>
