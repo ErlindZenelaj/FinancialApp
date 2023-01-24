@@ -14,7 +14,8 @@
           "Microsoft.EntityFrameworkCore.Tools": "6.0.12",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.11",
           "System.Data.SqlClient": "4.8.5",
-          "bootstrap": "5.2.1"
+          "bootstrap": "5.2.1",
+          "jQuery.UI.Combined": "1.10.2"
         },
         "runtime": {
           "FinancialApp.dll": {}
@@ -27,6 +28,12 @@
             "assemblyVersion": "2.8.0.0",
             "fileVersion": "2.8.26.1919"
           }
+        }
+      },
+      "jQuery/1.6.4": {},
+      "jQuery.UI.Combined/1.10.2": {
+        "dependencies": {
+          "jQuery": "1.6.4"
         }
       },
       "MessagePack/2.1.152": {
@@ -2421,6 +2428,20 @@
       "sha512": "sha512-OiKusGL20vby4uDEswj2IgkdchC1yQ6rwbIkZDVBPIR6al2b7n3pC91elBul9q33KaBgRKhbZH3+2Ur4fnWx2A==",
       "path": "humanizer.core/2.8.26",
       "hashPath": "humanizer.core.2.8.26.nupkg.sha512"
+    },
+    "jQuery/1.6.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8RzoZQFeFYL/cINRXksLWyl8D5TKctZ/2G8hrlOLLM5OgFNI9h3t3l5tB+BBbsBUxaPUageVe0p9ruU5jrFeow==",
+      "path": "jquery/1.6.4",
+      "hashPath": "jquery.1.6.4.nupkg.sha512"
+    },
+    "jQuery.UI.Combined/1.10.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-71HS7BNumMmFOQLxY6qONT2J+hN7Cl1sRkJUA9y3IzmuBWlHJxIkSKY4cB/QIUOuYP0CCd52xnpJeriD8sXrZw==",
+      "path": "jquery.ui.combined/1.10.2",
+      "hashPath": "jquery.ui.combined.1.10.2.nupkg.sha512"
     },
     "MessagePack/2.1.152": {
       "type": "package",

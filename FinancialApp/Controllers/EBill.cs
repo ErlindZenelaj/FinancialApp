@@ -29,7 +29,13 @@ namespace FinancialApp.Controllers
             Data data = new Data();
             data.SaveBillDetails(details);
             ModelState.Clear();
+           
             return View();
+        }
+
+        public IActionResult CreateItem(Items item)
+        {
+            return PartialView("_CreateItem", item);
         }
     }
 }

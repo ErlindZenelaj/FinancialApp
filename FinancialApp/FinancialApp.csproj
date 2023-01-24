@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="bootstrap" Version="5.2.1" />
+    <PackageReference Include="jQuery.UI.Combined" Version="1.10.2" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.12" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.12" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.11" />
@@ -35,5 +36,6 @@
     <Folder Include="Core\Repositories\" />
     <Folder Include="Core\ViewModel\" />
     <Folder Include="Areas\Identity\Pages\Clients\" />
+    <Folder Include="Areas\Scripts\" />
   </ItemGroup>
 </Project>

@@ -2,8 +2,10 @@
 using FinancialApp.Repositories;
 using System.Data;
 using System.Data.SqlClient;
-using System.Configuration;
+using System.Configuration.Assemblies;
 using System.Diagnostics.Contracts;
+
+
 
 namespace FinancialApp.Repositories
    
@@ -17,7 +19,7 @@ namespace FinancialApp.Repositories
         
         public Data()
         {
-            ConntionString = System.Configuration.ConfigurationManager.ConnectionStrings["dbConnection"].ConnectionString;
+            ConntionString = "Server = localhost; Database = FinancialApp; Trusted_Connection = True; MultipleActiveResultSets = true ";
         }
         public void SaveBillDetails(BillDetail details)
         {
@@ -25,7 +27,7 @@ namespace FinancialApp.Repositories
             try
             {
                 con.Open();
-                SqlCommand cmd = new SqlCommand("spt_save E Bill Details", con);
+                SqlCommand cmd = new SqlCommand("spt_saveEBillDetails", con);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@CustomerName", details.CustomerName);
                 cmd.Parameters.AddWithValue("@MobileNumber", details.MobileNumber);

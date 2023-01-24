@@ -80,3 +80,26 @@ ViewBag.Title = "Create";
         </div>
         </div>
 </div>
+</div>
+<script src="../Areas/jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+        $('#addItem').click(function () {
+                let productName = $('#productname').val();
+                let price = $('#price').val();
+                let quantity = $('#quantity').val();
+                let ItemIndex = $('#items tbody tr').length;
+                $.ajax({
+                    url:"/EBill/CreateItem",
+                    type:"POST",
+                    data: {productName, price, quantity, ItemIndex},
+                    success: function(resp){
+                        $('#items tbody').append(data);
+                    },
+                    error: function(err){
+                        alert(err)
+                    }
+                })
+            })
+        })
+    </script>
