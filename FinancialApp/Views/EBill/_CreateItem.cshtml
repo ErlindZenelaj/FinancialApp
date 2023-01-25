@@ -1,9 +1,26 @@
 ﻿@model FinancialApp.Models.Items
 
 
-<tr id="@Model.ItemIndex">
-    <td>@Model.ProductName</td>
-    <td>@Model.price</td>
-    <td>@Model.Quantity</td>
-    <td><button type="button" class="btn btn-sm bg-danger text-white">Remove</button></td>
+<tr id="row-@Model.ItemIndex">
+    <td>
+        @Model.ProductName
+        <input type="hidden" name="Items[@Model.ItemIndex].ProductName" value="@Model.ProductName"/>
+    </td>
+    <td>
+        @Model.price
+        <input type="hidden" name="Items[@Model.ItemIndex].price" value="@Model.price"/>
+    </td>
+    <td>
+        @Model.Quantity
+        <input type="hidden" name="Items[@Model.ItemIndex].Quantity" value="@Model.Quantity" />
+    </td>
+    <td><button type="button" class="btn btn-sm bg-danger text-white" onclick="RemoveItem(@Model.ItemIndex)">Remove</button></td>
 </tr>
+
+
+<script type="text/javascript">
+
+    function RemoveItem(Id) {
+        $('#row-' + Id).remove();
+      }
+</script>

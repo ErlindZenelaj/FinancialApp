@@ -14,7 +14,9 @@ namespace FinancialApp.Controllers
         // GET: /<controller>/
         public IActionResult Index()
         {
-            return View();
+            Data data = new Data();
+            var list = data.GetAllDetail();
+            return View(list);
         }
         
         public ActionResult Create()
@@ -36,6 +38,13 @@ namespace FinancialApp.Controllers
         public IActionResult CreateItem(Items item)
         {
             return PartialView("_CreateItem", item);
+        }
+
+        public ActionResult ViewBill(int Id)
+        {
+            Data data = new Data();
+            var details =  data.GetDetail(Id);
+            return View(details);
         }
     }
 }
