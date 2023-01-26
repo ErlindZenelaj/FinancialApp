@@ -18,8 +18,7 @@
     <None Remove="Microsoft.AspNetCore.Identity.EntityFrameworkCore" />
     <None Remove="Views\EBill\" />
     <None Remove="Content\" />
-    <None Remove="Content\Images\Photo1.jpeg" />
-    <None Remove="Content\Images\" />
+    <None Remove="wwwroot\Content\Images\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="bootstrap" Version="5.2.1" />
@@ -39,10 +38,10 @@
     <Folder Include="Core\ViewModel\" />
     <Folder Include="Areas\Identity\Pages\Clients\" />
     <Folder Include="Areas\Scripts\" />
-    <Folder Include="Content\" />
-    <Folder Include="Content\Images\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\Images\Photo1.jpeg" />
+    <None Include="wwwroot\Content\Images\Photo1.jpeg" />
+    <None Include="wwwroot\Content\Images\Photo2.jpeg" />
+    <None Include="wwwroot\Content\Images\Photo3.jpeg" />
   </ItemGroup>
 </Project>
