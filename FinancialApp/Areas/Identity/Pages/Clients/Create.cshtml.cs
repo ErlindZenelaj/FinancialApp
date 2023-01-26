@@ -36,7 +36,7 @@ namespace FinancialApp.Areas.Identity.Pages.Clients
             //save the new client into the database
             try
             {
-                String connectionString = "Server=localhost;Database=master;User=sa;Password=Valuetech@123;";
+                String connectionString = "Server=localhost;Database=FinancialApp;User=sa;Password=Valuetech@123;";
 
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {

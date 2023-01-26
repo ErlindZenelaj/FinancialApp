@@ -17,6 +17,9 @@
     <None Remove="Areas\Identity\Pages\Clients\" />
     <None Remove="Microsoft.AspNetCore.Identity.EntityFrameworkCore" />
     <None Remove="Views\EBill\" />
+    <None Remove="Content\" />
+    <None Remove="Content\Images\Photo1.jpeg" />
+    <None Remove="Content\Images\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="bootstrap" Version="5.2.1" />
@@ -32,10 +35,14 @@
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.12" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Content\Images\" />
     <Folder Include="Core\Repositories\" />
     <Folder Include="Core\ViewModel\" />
     <Folder Include="Areas\Identity\Pages\Clients\" />
     <Folder Include="Areas\Scripts\" />
+    <Folder Include="Content\" />
+    <Folder Include="Content\Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Images\Photo1.jpeg" />
   </ItemGroup>
 </Project>

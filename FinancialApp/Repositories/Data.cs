@@ -18,7 +18,7 @@ namespace FinancialApp.Repositories
         
         public Data()
         {
-            ConntionString = "Server = localhost; Database = FinancialApp; Trusted_Connection = True; MultipleActiveResultSets = true ";
+            ConntionString = "Server=localhost;Database=EBillDB;User=sa;Password=Valuetech@123";
         }
         public void SaveBillDetails(BillDetail details)
         {
