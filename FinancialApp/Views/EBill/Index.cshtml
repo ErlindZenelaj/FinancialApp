@@ -15,22 +15,28 @@
                         <th>Mobile Number</th>
                         <th>Address</th>
                         <th>Total Amount</th>
-                        <th></th>
+                        <td></td>
                     </tr>
                 </thead>
                 <tbody>
                     @foreach (var item in Model)
                     {
                        <tr>
-                            <td>@item.Id</td>
-                            <td>@item.CustomerName</td>
-                            <td>@item.MobileNumber</td>
-                            <td>@item.Address</td>
-                            <td>@item.TotalAmount</td>
-                            <td>
-                                @Html.ActionLink("View", "ViewBill", "EBill",new{Id=item.Id} ,new { @class="btn btn-sm btn-primary border"})
-                            </td>
-                        </tr>
+                           <td>@item.Id</td>
+                           <td>@item.CustomerName</td>
+                           <td>@item.MobileNumber</td>
+                           <td>@item.Address</td>
+                           <td>@item.TotalAmount</td>
+                           <td>
+                               @Html.ActionLink("View", "ViewBill", "EBill", new { Id = item.Id }, new { @class = "btn btn-sm btn-primary border" })
+                           </td>
+
+                           <td>
+                               <form asp-action="DeleteUser" asp-route-id="@item.Id" method="post">
+                                   <button type="submit" class="btn btn-sm btn-danger border">Delete</button>
+                               </form>
+                           </td>
+                       </tr>
                     }
                 </tbody>
             </table>

@@ -7,6 +7,8 @@ using FinancialApp.Models;
 using FinancialApp.Repositories;
 using Microsoft.AspNetCore.Authorization;
 using static FinancialApp.Core.Constants;
+using System.Data.SqlClient;
+using Microsoft.AspNetCore.Identity;
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace FinancialApp.Controllers
@@ -21,20 +23,20 @@ namespace FinancialApp.Controllers
             var list = data.GetAllDetail();
             return View(list);
         }
-        
+
         public ActionResult Create()
         {
             return View();
         }
 
         [HttpPost]
-       
+
         public ActionResult Create(BillDetail details)
         {
             Data data = new Data();
             data.SaveBillDetails(details);
             ModelState.Clear();
-           
+
             return View();
         }
 
@@ -48,9 +50,13 @@ namespace FinancialApp.Controllers
         public ActionResult ViewBill(int Id)
         {
             Data data = new Data();
-            var details =  data.GetDetail(Id);
+            var details = data.GetDetail(Id);
             return View(details);
         }
+
+       
+
+
     }
 }
 
