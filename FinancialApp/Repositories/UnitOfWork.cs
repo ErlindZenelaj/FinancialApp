@@ -14,5 +14,10 @@ namespace FinancialApp.Repositories
             Role = role;
            
         }
+
+        public Task FindByIdAsync(string id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

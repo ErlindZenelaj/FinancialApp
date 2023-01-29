@@ -19,6 +19,8 @@
     <None Remove="Views\EBill\" />
     <None Remove="Content\" />
     <None Remove="wwwroot\Content\Images\" />
+    <None Remove="Toolbox" />
+    <None Remove="TomsToolbox.ObservableCollections" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="bootstrap" Version="5.2.1" />

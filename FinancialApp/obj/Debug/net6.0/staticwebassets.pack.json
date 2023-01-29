@@ -181,6 +181,18 @@
       "PackagePath": "staticwebassets/FinancialApp.bundle.scp.css"
     },
     {
+      "Id": "/Users/erlindzenelaj/Documents/GitHub/FinancialApp/FinancialApp/wwwroot/Content/Images/Photo1.jpeg",
+      "PackagePath": "staticwebassets/Content/Images/Photo1.jpeg"
+    },
+    {
+      "Id": "/Users/erlindzenelaj/Documents/GitHub/FinancialApp/FinancialApp/wwwroot/Content/Images/Photo2.jpeg",
+      "PackagePath": "staticwebassets/Content/Images/Photo2.jpeg"
+    },
+    {
+      "Id": "/Users/erlindzenelaj/Documents/GitHub/FinancialApp/FinancialApp/wwwroot/Content/Images/Photo3.jpeg",
+      "PackagePath": "staticwebassets/Content/Images/Photo3.jpeg"
+    },
+    {
       "Id": "/Users/erlindzenelaj/Documents/GitHub/FinancialApp/FinancialApp/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },

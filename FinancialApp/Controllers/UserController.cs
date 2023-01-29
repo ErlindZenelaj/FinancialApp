@@ -28,6 +28,8 @@ namespace FinancialApp.Controllers
             _signInManager = signInManager;
         }
 
+
+
         [Authorize(Roles = "Administrator")]
         public IActionResult Index()
         {
@@ -59,6 +61,39 @@ namespace FinancialApp.Controllers
 
             return View(vm);
         }
+
+        public async Task<IActionResult>DeleteUser(string id)
+        {
+            var user = await _signInManager.UserManager.FindByIdAsync(id);
+
+            if(user == null)
+            {
+                ViewBag.ErrorMessage = $"User with Id = {id} cannot be found";
+                return View("NotFound");
+            }
+            else
+            {
+                var result = await _signInManager.UserManager.DeleteAsync(user);
+
+                if(result.Succeeded)
+                {
+                    return RedirectToAction("");
+                }
+
+                foreach (var error in result.Errors)
+                {
+                    ModelState.AddModelError("", error.Description);
+                }
+
+                return View("");
+            }
+
+
+        }
+
+
+
+
 
         [HttpPost]
 

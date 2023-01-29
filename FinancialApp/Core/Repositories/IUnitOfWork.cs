@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace FinancialApp.Core.Repositories
 {
 	public interface IUnitOfWork
@@ -6,6 +7,8 @@ namespace FinancialApp.Core.Repositories
 		IUserRepository User { get; }
 
 		IRoleRepository Role { get; }
-	}
+
+        Task FindByIdAsync(string id);
+    }
 }
 

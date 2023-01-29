@@ -69,15 +69,13 @@
 
                             <li> @Html.ActionLink("View Bills", "Index", "EBill", null, new { @class = "nav-link active" })</li>
 
-
                         }
 
+                        @if (SignInManager.IsSignedIn(User))
+                        {
 
-
-
-
-                        <li> @Html.ActionLink("Create Bill", "Create", "EBill", null, new { @class = "nav-link active" })</li>
-
+                            <li> @Html.ActionLink("Create Bill", "Create", "EBill", null, new { @class = "nav-link active" })</li>
+                        }
                     </ul>
                 </div>
                 <partial name="_LoginPartial" />
