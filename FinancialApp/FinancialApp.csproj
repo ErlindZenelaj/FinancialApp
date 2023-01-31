@@ -21,6 +21,7 @@
     <None Remove="wwwroot\Content\Images\" />
     <None Remove="Toolbox" />
     <None Remove="TomsToolbox.ObservableCollections" />
+    <None Remove="Views\Employee\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="bootstrap" Version="5.2.1" />
@@ -40,6 +41,7 @@
     <Folder Include="Core\ViewModel\" />
     <Folder Include="Areas\Identity\Pages\Clients\" />
     <Folder Include="Areas\Scripts\" />
+    <Folder Include="Views\Employee\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="wwwroot\Content\Images\Photo1.jpeg" />

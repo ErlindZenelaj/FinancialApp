@@ -9,12 +9,15 @@ using Microsoft.AspNetCore.Authorization;
 using static FinancialApp.Core.Constants;
 using System.Data.SqlClient;
 using Microsoft.AspNetCore.Identity;
+using System.Net;
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace FinancialApp.Controllers
 {
     public class EBill : Controller
     {
+        private object _context;
+
         // GET: /<controller>/
         [Authorize(Roles = "Administrator")]
         public IActionResult Index()
@@ -54,9 +57,8 @@ namespace FinancialApp.Controllers
             return View(details);
         }
 
+     
        
-
-
     }
 }
 

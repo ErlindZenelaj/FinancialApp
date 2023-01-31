@@ -29,14 +29,11 @@
                            <td>@item.TotalAmount</td>
                            <td>
                                @Html.ActionLink("View", "ViewBill", "EBill", new { Id = item.Id }, new { @class = "btn btn-sm btn-primary border" })
+
                            </td>
 
-                           <td>
-                               <form asp-action="DeleteUser" asp-route-id="@item.Id" method="post">
-                                   <button type="submit" class="btn btn-sm btn-danger border">Delete</button>
-                               </form>
-                           </td>
                        </tr>
+
                     }
                 </tbody>
             </table>
