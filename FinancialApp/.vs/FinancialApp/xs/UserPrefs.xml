@@ -1,17 +1,18 @@
 ﻿<Properties StartupConfiguration="{19011A29-6E4D-4B61-BB38-C971835948F2}|Default">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.FinancialApp PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
     <Files>
-      <File FileName="Views/EBill/Index.cshtml" Line="15" Column="47" />
-      <File FileName="Models/salary.cs" Line="17" Column="1" />
-      <File FileName="Controllers/EmployeeController.cs" Line="20" Column="1" />
-      <File FileName="Views/Employee/Index.cshtml" Line="26" Column="56" />
-      <File FileName="Program.cs" Line="104" Column="1" />
+      <File FileName="Views/EBill/Index.cshtml" />
+      <File FileName="Models/salary.cs" />
+      <File FileName="Controllers/EmployeeController.cs" />
+      <File FileName="Views/Employee/Index.cshtml" />
+      <File FileName="Program.cs" Line="105" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -19,13 +20,12 @@
           <Node name="FinancialApp" expanded="True">
             <Node name="FinancialApp" expanded="True">
               <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True">
-                  <Node name="Microsoft.AspNet.WebApi" selected="True" />
-                </Node>
+                <Node name="PackageDependencies" expanded="True" />
               </Node>
               <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
+                <Node name="EBill" expanded="True" />
                 <Node name="Employee" expanded="True" />
                 <Node name="Shared" expanded="True" />
               </Node>
@@ -33,10 +33,6 @@
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
 </Properties>

@@ -5,12 +5,6 @@ using FinancialApp.Core;
 using FinancialApp.Core.Repositories;
 using FinancialApp.Repositories;
 using FinancialApp.Interfaces;
-using Microsoft.AspNetCore.Mvc;
-using System.Web.Mvc;
-using Microsoft.AspNetCore.Routing;
-using System.Web;
-using System.Net.Http;
-using System.Web.Http.Routing;
 
 
 
@@ -90,16 +84,3 @@ void AddScoped()
     builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 }
-
-app.UseMvc(routes =>
-{
-
-    routes.MapRoute(
-    name: "Default",
-    url: "{controller}/{action}/{id}",
-    defaults: new { controller = "Employee", action = "Index", id = UrlParameter.Optional }
-    );
-
-});
-
-
