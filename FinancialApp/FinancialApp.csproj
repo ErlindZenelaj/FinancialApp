@@ -22,6 +22,11 @@
     <None Remove="Toolbox" />
     <None Remove="TomsToolbox.ObservableCollections" />
     <None Remove="Views\Employee\" />
+    <None Remove="App_Start\" />
+    <None Remove="Microsoft.AspNet.Mvc" />
+    <None Remove="Microsoft.AspNetCore.Mvc" />
+    <None Remove="Microsoft.AspNetCore.Routing" />
+    <None Remove="Microsoft.AspNet.WebApi" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="bootstrap" Version="5.2.1" />
@@ -35,6 +40,9 @@
     </PackageReference>
     <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.12" />
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="3.0.20105.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Routing" Version="2.2.2" />
+    <PackageReference Include="Microsoft.AspNet.WebApi" Version="5.2.9" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Core\Repositories\" />
@@ -42,6 +50,7 @@
     <Folder Include="Areas\Identity\Pages\Clients\" />
     <Folder Include="Areas\Scripts\" />
     <Folder Include="Views\Employee\" />
+    <Folder Include="App_Start\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="wwwroot\Content\Images\Photo1.jpeg" />
