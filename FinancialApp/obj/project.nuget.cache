@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "RW/umw5Gce4idfkAbV+pnpCbKhjRO55lm6WZbxzhDUcbSNYOPwRqAQISDtKIUQZx8tc9qjTerF56axGZMSLimg==",
+  "dgSpecHash": "tY4CpJxCt9ywcI3jVIjhA26DeIhqxy+1oFUOqWDwj0UN//8u16zgF34drVyvp4Kc6/X5nvE+/BzVVcyRvS0u2A==",
   "success": true,
   "projectFilePath": "/Users/erlindzenelaj/Documents/GitHub/FinancialApp/FinancialApp/FinancialApp.csproj",
   "expectedPackageFiles": [
@@ -42,10 +42,10 @@
     "/Users/erlindzenelaj/.nuget/packages/microsoft.entityframeworkcore/6.0.12/microsoft.entityframeworkcore.6.0.12.nupkg.sha512",
     "/Users/erlindzenelaj/.nuget/packages/microsoft.entityframeworkcore.abstractions/6.0.12/microsoft.entityframeworkcore.abstractions.6.0.12.nupkg.sha512",
     "/Users/erlindzenelaj/.nuget/packages/microsoft.entityframeworkcore.analyzers/6.0.12/microsoft.entityframeworkcore.analyzers.6.0.12.nupkg.sha512",
-    "/Users/erlindzenelaj/.nuget/packages/microsoft.entityframeworkcore.design/6.0.12/microsoft.entityframeworkcore.design.6.0.12.nupkg.sha512",
+    "/Users/erlindzenelaj/.nuget/packages/microsoft.entityframeworkcore.design/6.0.3/microsoft.entityframeworkcore.design.6.0.3.nupkg.sha512",
     "/Users/erlindzenelaj/.nuget/packages/microsoft.entityframeworkcore.relational/6.0.12/microsoft.entityframeworkcore.relational.6.0.12.nupkg.sha512",
     "/Users/erlindzenelaj/.nuget/packages/microsoft.entityframeworkcore.sqlserver/6.0.12/microsoft.entityframeworkcore.sqlserver.6.0.12.nupkg.sha512",
-    "/Users/erlindzenelaj/.nuget/packages/microsoft.entityframeworkcore.tools/6.0.12/microsoft.entityframeworkcore.tools.6.0.12.nupkg.sha512",
+    "/Users/erlindzenelaj/.nuget/packages/microsoft.entityframeworkcore.tools/6.0.3/microsoft.entityframeworkcore.tools.6.0.3.nupkg.sha512",
     "/Users/erlindzenelaj/.nuget/packages/microsoft.extensions.caching.abstractions/6.0.0/microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
     "/Users/erlindzenelaj/.nuget/packages/microsoft.extensions.caching.memory/6.0.1/microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",
     "/Users/erlindzenelaj/.nuget/packages/microsoft.extensions.configuration.abstractions/6.0.0/microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
