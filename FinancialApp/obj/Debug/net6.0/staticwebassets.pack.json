@@ -197,6 +197,18 @@
       "PackagePath": "staticwebassets/css/site.css"
     },
     {
+      "Id": "/Users/erlindzenelaj/Documents/GitHub/FinancialApp/FinancialApp/wwwroot/favicon-16x16.png",
+      "PackagePath": "staticwebassets/favicon-16x16.png"
+    },
+    {
+      "Id": "/Users/erlindzenelaj/Documents/GitHub/FinancialApp/FinancialApp/wwwroot/favicon-2.ico",
+      "PackagePath": "staticwebassets/favicon-2.ico"
+    },
+    {
+      "Id": "/Users/erlindzenelaj/Documents/GitHub/FinancialApp/FinancialApp/wwwroot/favicon-32x32.png",
+      "PackagePath": "staticwebassets/favicon-32x32.png"
+    },
+    {
       "Id": "/Users/erlindzenelaj/Documents/GitHub/FinancialApp/FinancialApp/wwwroot/favicon.ico",
       "PackagePath": "staticwebassets/favicon.ico"
     },
@@ -431,6 +443,14 @@
     {
       "Id": "/Users/erlindzenelaj/Documents/GitHub/FinancialApp/FinancialApp/wwwroot/lib/jquery/dist/jquery.min.map",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
+    },
+    {
+      "Id": "/Users/erlindzenelaj/Documents/GitHub/FinancialApp/FinancialApp/wwwroot/logo.png",
+      "PackagePath": "staticwebassets/logo.png"
+    },
+    {
+      "Id": "/Users/erlindzenelaj/Documents/GitHub/FinancialApp/FinancialApp/wwwroot/profile.jpg",
+      "PackagePath": "staticwebassets/profile.jpg"
     },
     {
       "Id": "obj/Debug/net6.0/staticwebassets/msbuild.FinancialApp.Microsoft.AspNetCore.StaticWebAssets.props",
