@@ -5,6 +5,7 @@ using FinancialApp.Core;
 using FinancialApp.Core.Repositories;
 using FinancialApp.Repositories;
 using FinancialApp.Interfaces;
+using FinancialApp.Models;
 
 
 
@@ -25,7 +26,7 @@ builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.R
 builder.Services.AddControllersWithViews();
 
 //DI
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
+builder.Services.AddDbContext<ApplicationDb>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("DevConnection")));
 
 #region Authorization

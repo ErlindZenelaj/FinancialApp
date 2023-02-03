@@ -15,4 +15,50 @@ html {
 
 body {
   margin-bottom: 60px;
+
+ }
+
+/*Radio Button Group*/
+.e-btn-group.custom-rbt-group {
+    width: 100%;
+}
+
+
+.e-btn-group.custom-rbt-group .e-btn{
+    width: 50%;
+}
+
+.custom-rbt-group label.e-btn {
+    box-shadow: none !important;
+    border: 1px solid #fff;
+    background-color: #fff;
+    color: #212b36;
+    
+}
+
+.e-btn-group.custom-rbt-group input:checked + label.e-btn {
+    background-color: rgb(34 43 51);
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.e-grid {
+    border: 0;
+    border-radius: 5px;
+    font-family: 'Inter'
+}
+
+*:not(.fa-solid):not(.fa):not(.e-icons) {
+    font-family: "Inter"
+}
+
+/*Button*/
+.btn:focus, .btn:active {
+    outline: none !important;
+    box-shadow: none;
+}
+/*Hyperlink*/
+.no-a-decoration, .no-a-decoration:hover {
+    text-decoration: none;
+    color: inherit;
 }

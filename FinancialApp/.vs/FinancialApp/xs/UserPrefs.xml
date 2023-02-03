@@ -1,38 +1,33 @@
 ﻿<Properties StartupConfiguration="{19011A29-6E4D-4B61-BB38-C971835948F2}|Default">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.FinancialApp PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Models/Category.cs">
     <Files>
-      <File FileName="Views/EBill/Index.cshtml" />
-      <File FileName="Models/salary.cs" />
-      <File FileName="Controllers/EmployeeController.cs" />
-      <File FileName="Views/Employee/Index.cshtml" />
-      <File FileName="Program.cs" Line="105" Column="1" />
+      <File FileName="Models/Category.cs" Line="14" Column="38" />
+      <File FileName="Models/Transaction.cs" Line="16" Column="34" />
+      <File FileName="Models/ApplicationDbContext.cs" Line="5" Column="2" />
+      <File FileName="Program.cs" Line="31" Column="3" />
+      <File FileName="appsettings.json" Line="12" Column="49" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="FinancialApp" expanded="True">
+          <Node name="FinancialApp" expanded="True" selected="True">
             <Node name="FinancialApp" expanded="True">
               <Node name="Dependencies" expanded="True">
                 <Node name="PackageDependencies" expanded="True" />
               </Node>
-              <Node name="Controllers" expanded="True" />
+              <Node name="Migrations" expanded="True" />
               <Node name="Models" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="EBill" expanded="True" />
-                <Node name="Employee" expanded="True" />
-                <Node name="Shared" expanded="True" />
-              </Node>
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

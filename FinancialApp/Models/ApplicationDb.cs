@@ -1,11 +1,11 @@
-﻿using System;
+﻿ using System;
 using Microsoft.EntityFrameworkCore;
 
 namespace FinancialApp.Models
 {
-	public class ApplicationDbContext:DbContext
+	public class ApplicationDb:DbContext
 	{
-		public ApplicationDbContext(DbContextOptions options):base(options)
+		public ApplicationDb(DbContextOptions options):base(options)
 		{
 		}
 

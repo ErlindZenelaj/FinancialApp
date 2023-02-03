@@ -164,6 +164,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/erlindzenelaj/Documents/GitHub/FinancialApp/FinancialApp/Views/Category/AddOrEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcnkvQWRkT3JFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/erlindzenelaj/Documents/GitHub/FinancialApp/FinancialApp/Views/Category/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcnkvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/erlindzenelaj/Documents/GitHub/FinancialApp/FinancialApp/Views/EBill/create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRUJpbGwvY3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

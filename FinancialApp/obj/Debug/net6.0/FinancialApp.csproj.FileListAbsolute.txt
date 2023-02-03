@@ -563,3 +563,5 @@ C:/Users/User/Documents/GitHub/FinancialApp/FinancialApp/obj/Debug/net6.0/ref/Fi
 /Users/erlindzenelaj/Documents/GitHub/FinancialApp/FinancialApp/obj/Debug/net6.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
 /Users/erlindzenelaj/Documents/GitHub/FinancialApp/FinancialApp/obj/Debug/net6.0/scopedcss/bundle/FinancialApp.styles.css
 /Users/erlindzenelaj/Documents/GitHub/FinancialApp/FinancialApp/obj/Debug/net6.0/scopedcss/projectbundle/FinancialApp.bundle.scp.css
+/Users/erlindzenelaj/Documents/GitHub/FinancialApp/FinancialApp/bin/Debug/net6.0/Syncfusion.EJ2.dll
+/Users/erlindzenelaj/Documents/GitHub/FinancialApp/FinancialApp/bin/Debug/net6.0/Syncfusion.Licensing.dll

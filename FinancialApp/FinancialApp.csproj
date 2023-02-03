@@ -25,25 +25,31 @@
     <None Remove="Microsoft.AspNetCore.Mvc" />
     <None Remove="Microsoft.AspNetCore.Routing" />
     <None Remove="Microsoft.AspNet.WebApi" />
+    <None Remove="Microsoft.EntityFrameworkCore.SqlServer" />
+    <None Remove="Syncfusion.EJ2.MVC5" />
+    <None Remove="Syncfusion.EJ2.AspNet.Core" />
+    <None Remove="Views\Category\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="bootstrap" Version="5.2.1" />
     <PackageReference Include="jQuery.UI.Combined" Version="1.10.2" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.12" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.12" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.11" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.3">
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.12">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
-    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
-    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.12" />
+    <PackageReference Include="Syncfusion.EJ2.AspNet.Core" Version="20.4.0.48" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Core\Repositories\" />
     <Folder Include="Core\ViewModel\" />
     <Folder Include="Areas\Identity\Pages\Clients\" />
     <Folder Include="Areas\Scripts\" />
+    <Folder Include="Views\Category\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="wwwroot\Content\Images\Photo1.jpeg" />
