@@ -5,10 +5,11 @@
     ViewData["PageActionText"] = "+ New Transaction";
     ViewData["PageActionUrl"] = "/Transaction/AddOrEdit";
 }
-<partial name="_SideBar" />
+
+
 
 <div class="row">
-    <div class="col-md-7">
+  <div class="col-md-7">
         <ejs-grid id="transactions" dataSource="@Model" gridLines="None"
                   allowSorting="true" allowPaging="true">
             <e-grid-pagesettings pageSize="10"></e-grid-pagesettings>

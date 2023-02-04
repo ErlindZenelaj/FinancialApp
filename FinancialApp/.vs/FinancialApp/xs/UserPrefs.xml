@@ -1,37 +1,44 @@
 ﻿<Properties StartupConfiguration="{19011A29-6E4D-4B61-BB38-C971835948F2}|Default">
-  <MonoDevelop.Ide.ItemProperties.FinancialApp PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/CategoryController.cs">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.FinancialApp PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Shared/_LoginPartial.cshtml">
     <Files>
-      <File FileName="Models/Category.cs" Line="25" Column="4" />
-      <File FileName="wwwroot/css/site.css" Line="64" Column="2" />
-      <File FileName="Views/Shared/_Layout.cshtml" Line="19" Column="147" />
-      <File FileName="Views/Category/Index.cshtml" Line="26" Column="11" />
-      <File FileName="Controllers/CategoryController.cs" Line="69" Column="14" />
-      <File FileName="Views/Category/Create.cshtml" Line="1" Column="1" />
+      <File FileName="Views/Transaction/AddOrEdit.cshtml" Line="6" Column="18" />
+      <File FileName="Views/Shared/_Layout.cshtml" Line="168" Column="1" />
+      <File FileName="wwwroot/css/site.css" Line="316" Column="13" />
+      <File FileName="Views/Shared/Copy.cshtml" Line="58" Column="25" />
+      <File FileName="wwwroot/js/site.js" Line="15" Column="1" />
+      <File FileName="Views/Shared/_LoginPartial.cshtml" Line="13" Column="174" />
+      <File FileName="Views/Shared/_SideBar.cshtml" Line="4" Column="1" />
+      <File FileName="Views/Transaction/Index.cshtml" Line="11" Column="18" />
+      <File FileName="Views/Dashboard/Index.cshtml" Line="4" Column="2" />
+      <File FileName="Views/Category/Index.cshtml" Line="9" Column="32" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="FinancialApp" expanded="True">
             <Node name="FinancialApp" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
-              </Node>
               <Node name="Controllers" expanded="True" />
-              <Node name="Migrations" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Category" expanded="True" />
+                <Node name="Dashboard" expanded="True" />
                 <Node name="EBill" expanded="True" />
-                <Node name="RoleViews" expanded="True" />
-                <Node name="Shared" expanded="True" />
+                <Node name="Shared" expanded="True">
+                  <Node name="_LoginPartial.cshtml" selected="True" />
+                </Node>
+                <Node name="Transaction" expanded="True" />
+                <Node name="User" expanded="True" />
               </Node>
               <Node name="wwwroot" expanded="True">
                 <Node name="css" expanded="True" />
+                <Node name="js" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -39,6 +46,4 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

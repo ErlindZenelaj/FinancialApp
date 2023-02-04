@@ -19,127 +19,162 @@
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Inter:wght@300;400;700&family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/ASP.NETCoreIdentityCustom.styles.css" asp-append-version="true" />
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.syncfusion.com/ej2/20.4.48/dist/ej2.min.js"></script>
 
 </head> 
 <body class="e-bigger">
 
-    @*<partial name="_SideBar" />*@
-
     <div class="dock-targer">
-        <header>
-            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3 shadow sticky-top">
-                <div class="container-fluid">
-                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Financial App</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                        <ul class="navbar-nav flex-grow-1">
-                            <li class="nav-item">
-                                <!--    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a> -->
-                                @Html.ActionLink("Home", "Index", "Home", null, new { @class = "nav-link active" })
-                            </li>
-                            @if (SignInManager.IsSignedIn(User))
-                            {
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Role Access
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li class="nav-item">
-                                            <a class="dropdown-item" asp-area="" asp-controller="RoleViews" asp-action="Index">Roles</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" asp-area="" asp-controller="RoleViews" asp-action="Manager">Manager</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" asp-area="" asp-controller="RoleViews" asp-action="Admin">Admin</a>
-                                        </li>
+        <mainev class="d-lg-flex flex-nowrap">
+            <div class="d-flex flex-column  p-3 bg-light big" style="width: 280px;">
+                <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                    <svg class="bi pe-none me-2" width="40" height="32"></svg>
+                    <span class="fs-4">Sidebar</span>
+                </a>
+                <hr>
+                <ul class="nav nav-pills flex-column mb-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" asp-area="" asp-controller="Home" asp-action="Index" aria-current="page">
+                            <svg class="bi pe-none me-2" width="16" height="16"></svg>
+                            Home
+                        </a>
+                    </li>
+                    @if (SignInManager.IsSignedIn(User))
+                    {
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                                <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2" /></svg>
+                                Roles
 
-
-
-                                    </ul>
-                                </li>
-                            }
-
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                            </li>
-
-                            @if (SignInManager.IsSignedIn(User) && User.IsInRole("Administrator"))
-                            {
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="Index">Users</a>
+                                    <a class="dropdown-item" asp-area="" asp-controller="RoleViews" asp-action="Index">Roles</a>
                                 </li>
-
-                                <li> @Html.ActionLink("View Bills", "Index", "EBill", null, new { @class = "nav-link active" })</li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="Identity" asp-page="/Clients/Index">Add Employes</a>
+                                <li>
+                                    <a class="dropdown-item" asp-area="" asp-controller="RoleViews" asp-action="Manager">Manager</a>
                                 </li>
-
-                            }
-
-                            @if (SignInManager.IsSignedIn(User))
-                            {
-
-                                <li> @Html.ActionLink("Create Bill", "Create", "EBill", null, new { @class = "nav-link active" })</li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Dashboard" asp-action="Index">Dashboard</a>
+                                <li>
+                                    <a class="dropdown-item" asp-area="" asp-controller="RoleViews" asp-action="Admin">Admin</a>
                                 </li>
+                            </ul>
+                        </li>
 
-                            }
+                        <li>
+                            <a class="nav-link text-dark" asp-area="Create Bill" asp-controller="EBill" asp-action="Create">
+                                <svg class="bi pe-none me-2" width="16" height="16"></svg>
+                                Create Bill
+                            </a>
 
-                        </ul>
-                    </div>
-                    <partial name="_LoginPartial" />
-                </div>
-            </nav>
-        </header>
+                        </li>
 
-        <div class="main-content">
-            <div class="container mt-5">
-                <div class="row justify-content-center">
-                    <div class="@(ViewData["isDashboard"] == null?"col-md-10":"col-md-12")">
-                        <main role="main" class="pb-3">
-                            @if (ViewData["isDashboard"] == null)
-                            {
-                                <div class="row">
-                                    <div class="col-md-7">
-                                        <div class="d-flex flex-column mb-5">
-                                            <div class="d-flex mb-1">
-                                                <div class="flex-grow-1">
-                                                    <h3 class="fw-bold">@ViewData["PageTitle"]</h3>
+                    }
+
+
+                    @if (SignInManager.IsSignedIn(User) && User.IsInRole("Administrator"))
+                    {
+                        <li>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="Index">
+                                <svg class="bi pe-none me-2" width="16" height="16"></svg>
+                                Users
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="nav-link text-dark" asp-area="View Bills" asp-controller="EBill" asp-action="Index">
+                                <svg class="bi pe-none me-2" width="16" height="16"></svg>
+                                View Bill
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a class="nav-link text-dark" asp-area="Identity" asp-page="/Clients/Index">
+                                <svg class="bi pe-none me-2" width="16" height="16"></svg>
+                                Add Employes
+                            </a>
+                        </li>
+
+                    }
+
+                 @if (SignInManager.IsSignedIn(User))
+                     {
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Dashboard" asp-action="Index">
+                            <svg class="bi pe-none me-2" width="16" height="16"></svg>
+                            Dashboard
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Category" asp-action="Index">
+                            <svg class="bi pe-none me-2" width="16" height="16"></svg>
+                            Categories
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Transaction" asp-action="Index">
+                            <svg class="bi pe-none me-2" width="16" height="16"></svg>
+                            Transaction
+                        </a>
+                    </li>
+
+                     }
+                </ul>
+                <hr>
+               
+                <partial name="_LoginPartial" />
+            </div>
+             
+
+
+   
+                <div class="container mt-5">
+                    <div class="row justify-content-center">
+                        <div class="@(ViewData["isDashboard"] == null?"col-md-10":"col-md-12")">
+                            <main role="main" class="pb-3">
+                                @if (ViewData["isDashboard"] == null)
+                                {
+                                    <div class="row">
+                                        <div class="col-md-7">
+                                            <div class="d-flex flex-column mb-5">
+                                                <div class="d-flex mb-1">
+                                                    <div class="flex-grow-1">
+                                                        <h3 class="fw-bold">@ViewData["PageTitle"]</h3>
+                                                    </div>
+                                                    <div>
+                                                        @if (ViewData["PageActionText"] != null)
+                                                        {
+                                                            <a class="btn btn-success" href="@ViewData["PageActionUrl"]">
+                                                                @ViewData["PageActionText"]
+                                                            </a>
+                                                        }
+                                                    </div>
                                                 </div>
-                                                <div>
-                                                    @if (ViewData["PageActionText"] != null)
-                                                    {
-                                                        <a class="btn btn-success" href="@ViewData["PageActionUrl"]">
-                                                            @ViewData["PageActionText"]
-                                                        </a>
-                                                    }
-                                                </div>
+                                                <ejs-breadcrumb id="breadcrumb"
+                                                                separatorTemplate="@Html.Raw("<span class='fa-solid fa-angle-right'></span>")"></ejs-breadcrumb>
                                             </div>
-                                            <ejs-breadcrumb id="breadcrumb"
-                                                            separatorTemplate="@Html.Raw("<span class='fa-solid fa-angle-right'></span>")"></ejs-breadcrumb>
                                         </div>
                                     </div>
-                                </div>
-                            }
-                            @RenderBody()
-                        </main>
+                                }
+                                @RenderBody()
+                            </main>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-     </div>
-        <script src="~/lib/jquery/dist/jquery.min.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="~/js/site.js" asp-append-version="true"></script>
-        @await RenderSectionAsync("Scripts", required: false)
-        <ejs-scripts></ejs-scripts>
+        
+
+        </mainev>
+
+</div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+    <ejs-scripts></ejs-scripts>
 </body>
 </html>
