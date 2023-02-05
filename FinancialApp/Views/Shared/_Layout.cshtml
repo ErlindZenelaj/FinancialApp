@@ -25,14 +25,18 @@
 </head> 
 <body class="e-bigger">
 
+
     <div class="dock-targer">
+  
         <mainev class="d-lg-flex flex-nowrap">
             <div class="d-flex flex-column  p-3 bg-light big" style="width: 280px;">
+
                 <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
                     <svg class="bi pe-none me-2" width="40" height="32"></svg>
                     <span class="fs-4">Sidebar</span>
                 </a>
                 <hr>
+
                 <ul class="nav nav-pills flex-column mb-auto">
                     <li class="nav-item">
                         <a class="nav-link active" asp-area="" asp-controller="Home" asp-action="Index" aria-current="page">
@@ -98,77 +102,78 @@
 
                     }
 
-                 @if (SignInManager.IsSignedIn(User))
-                     {
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Dashboard" asp-action="Index">
-                            <svg class="bi pe-none me-2" width="16" height="16"></svg>
-                            Dashboard
-                        </a>
-                    </li>
+                    @if (SignInManager.IsSignedIn(User))
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Dashboard" asp-action="Index">
+                                <svg class="bi pe-none me-2" width="16" height="16"></svg>
+                                Dashboard
+                            </a>
+                        </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Category" asp-action="Index">
-                            <svg class="bi pe-none me-2" width="16" height="16"></svg>
-                            Categories
-                        </a>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Category" asp-action="Index">
+                                <svg class="bi pe-none me-2" width="16" height="16"></svg>
+                                Categories
+                            </a>
+                        </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Transaction" asp-action="Index">
-                            <svg class="bi pe-none me-2" width="16" height="16"></svg>
-                            Transaction
-                        </a>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Transaction" asp-action="Index">
+                                <svg class="bi pe-none me-2" width="16" height="16"></svg>
+                                Transaction
+                            </a>
+                        </li>
 
-                     }
+                    }
                 </ul>
                 <hr>
-               
-                <partial name="_LoginPartial" />
+
+
             </div>
-             
 
 
-   
-                <div class="container mt-5">
-                    <div class="row justify-content-center">
-                        <div class="@(ViewData["isDashboard"] == null?"col-md-10":"col-md-12")">
-                            <main role="main" class="pb-3">
-                                @if (ViewData["isDashboard"] == null)
-                                {
-                                    <div class="row">
-                                        <div class="col-md-7">
-                                            <div class="d-flex flex-column mb-5">
-                                                <div class="d-flex mb-1">
-                                                    <div class="flex-grow-1">
-                                                        <h3 class="fw-bold">@ViewData["PageTitle"]</h3>
-                                                    </div>
-                                                    <div>
-                                                        @if (ViewData["PageActionText"] != null)
-                                                        {
-                                                            <a class="btn btn-success" href="@ViewData["PageActionUrl"]">
-                                                                @ViewData["PageActionText"]
-                                                            </a>
-                                                        }
-                                                    </div>
+
+            <div class="container mt-5">
+                <partial name="_LoginPartial" />
+                <div class="row justify-content-center">
+                    <div class="@(ViewData["isDashboard"] == null?"col-md-10":"col-md-12")">
+                        <main role="main" class="pb-3">
+                            @if (ViewData["isDashboard"] == null)
+                            {
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <div class="d-flex flex-column mb-5">
+                                            <div class="d-flex mb-1">
+                                                <div class="flex-grow-1">
+                                                    <h3 class="fw-bold">@ViewData["PageTitle"]</h3>
                                                 </div>
-                                                <ejs-breadcrumb id="breadcrumb"
-                                                                separatorTemplate="@Html.Raw("<span class='fa-solid fa-angle-right'></span>")"></ejs-breadcrumb>
+                                                <div>
+                                                    @if (ViewData["PageActionText"] != null)
+                                                    {
+                                                        <a class="btn btn-success" href="@ViewData["PageActionUrl"]">
+                                                            @ViewData["PageActionText"]
+                                                        </a>
+                                                    }
+                                                </div>
                                             </div>
+                                            <ejs-breadcrumb id="breadcrumb"
+                                                            separatorTemplate="@Html.Raw("<span class='fa-solid fa-angle-right'></span>")"></ejs-breadcrumb>
                                         </div>
                                     </div>
-                                }
-                                @RenderBody()
-                            </main>
-                        </div>
+                                </div>
+                            }
+                            @RenderBody()
+                        </main>
                     </div>
                 </div>
-        
+            </div>
+
 
         </mainev>
 
-</div>
+    </div>
+    
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

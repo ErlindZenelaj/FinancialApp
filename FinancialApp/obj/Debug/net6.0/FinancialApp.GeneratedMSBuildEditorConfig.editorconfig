@@ -220,10 +220,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/erlindzenelaj/Documents/GitHub/FinancialApp/FinancialApp/Views/Shared/_SideBar.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19TaWRlQmFyLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [/Users/erlindzenelaj/Documents/GitHub/FinancialApp/FinancialApp/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -234,10 +230,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/erlindzenelaj/Documents/GitHub/FinancialApp/FinancialApp/Views/Transaction/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhbnNhY3Rpb24vSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/erlindzenelaj/Documents/GitHub/FinancialApp/FinancialApp/Views/User/Copy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9Db3B5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/erlindzenelaj/Documents/GitHub/FinancialApp/FinancialApp/Views/User/Edit.cshtml]
