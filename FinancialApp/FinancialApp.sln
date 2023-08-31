@@ -5,6 +5,8 @@ VisualStudioVersion = 25.0.1703.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialApp", "FinancialApp.csproj", "{19011A29-6E4D-4B61-BB38-C971835948F2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BulkyBookWeb", "..\..\BBook\BulkyBookWeb\BulkyBookWeb.csproj", "{58BB4AC6-E225-4F33-85C0-995A4177050F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{19011A29-6E4D-4B61-BB38-C971835948F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19011A29-6E4D-4B61-BB38-C971835948F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19011A29-6E4D-4B61-BB38-C971835948F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58BB4AC6-E225-4F33-85C0-995A4177050F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58BB4AC6-E225-4F33-85C0-995A4177050F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58BB4AC6-E225-4F33-85C0-995A4177050F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58BB4AC6-E225-4F33-85C0-995A4177050F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

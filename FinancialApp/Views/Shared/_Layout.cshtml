@@ -19,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Inter:wght@300;400;700&family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/ASP.NETCoreIdentityCustom.styles.css" asp-append-version="true" />
-    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/dist/css/bootswatch.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <script src="https://cdn.syncfusion.com/ej2/20.4.48/dist/ej2.min.js"></script>
 
@@ -28,110 +28,116 @@
 
 
     <div class="dock-targer">
-  
-        <mainev class="d-lg-flex flex-nowrap">
-            <div class="d-flex flex-column  p-3 bg-light big" style="width: 280px;">
-
-                <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-                    <i class="bi bi-coin" style="font-size: 2rem; "></i> 
+        <nav class="navbar navbar-expand-lg bg-light" data-bs-theme="light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <i class="bi bi-coin" style="font-size: 2rem; "></i>
                     <span class="fs-4">FinancialApp</span>
                 </a>
-                <hr>
+                <button class="navbar-toggler dg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor03">
+                    <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" asp-area="" asp-controller="Home" asp-action="Index" aria-current="page">
+                                    <i class="bi bi-house-door"></i>
+                                    Home
+                                </a>
+                            </li>
+                            @if (SignInManager.IsSignedIn(User))
+                            {
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                                        <i class="bi bi-people"></i>
+                                        Roles
 
-                <ul class="nav nav-pills flex-column mb-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" asp-area="" asp-controller="Home" asp-action="Index" aria-current="page">
-                            <i class="bi bi-house-door"></i>
-                            Home
-                        </a>
-                    </li>
-                    @if (SignInManager.IsSignedIn(User))
-                    {
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
-                                <i class="bi bi-people"></i>
-                                Roles
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li class="nav-item">
+                                            <a class="dropdown-item" asp-area="" asp-controller="RoleViews" asp-action="Index">Roles</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" asp-area="" asp-controller="RoleViews" asp-action="Manager">Manager</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" asp-area="" asp-controller="RoleViews" asp-action="Admin">Admin</a>
+                                        </li>
+                                    </ul>
+                                </li>
 
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="nav-link text-dark" asp-area="Create Bill" asp-controller="EBill" asp-action="Create">
+                                        <i class="bi bi-receipt"></i>
+                                        Create Bill
+                                    </a>
+
+                                </li>
+
+                            }
+
+
+                            @if (SignInManager.IsSignedIn(User) && User.IsInRole("Administrator"))
+                            {
+                                <li>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="Index">
+                                        <i class="bi bi-person-lines-fill"></i>
+                                        Users
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="nav-link text-dark" asp-area="View Bills" asp-controller="EBill" asp-action="Index">
+                                        <i class="bi bi-people"></i>
+                                        View Bill
+                                    </a>
+                                </li>
+
+
+                                <li>
+                                    <a class="nav-link text-dark" asp-area="Identity" asp-page="/Clients/Index">
+                                        <i class="bi bi-person-plus"></i>
+                                        Add Employes
+                                    </a>
+                                </li>
+
+                            }
+
+                            @if (SignInManager.IsSignedIn(User))
+                            {
                                 <li class="nav-item">
-                                    <a class="dropdown-item" asp-area="" asp-controller="RoleViews" asp-action="Index">Roles</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Dashboard" asp-action="Index">
+                                        <i class="bi bi-activity"></i>
+                                        Dashboard
+                                    </a>
                                 </li>
-                                <li>
-                                    <a class="dropdown-item" asp-area="" asp-controller="RoleViews" asp-action="Manager">Manager</a>
+
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Category" asp-action="Index">
+                                        <i class="bi bi-card-list"></i>
+                                        Categories
+                                    </a>
                                 </li>
-                                <li>
-                                    <a class="dropdown-item" asp-area="" asp-controller="RoleViews" asp-action="Admin">Admin</a>
+
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Transaction" asp-action="Index">
+                                        <i class="bi bi-wallet-fill"></i>
+                                        Transaction
+                                    </a>
                                 </li>
-                            </ul>
-                        </li>
 
-                        <li>
-                            <a class="nav-link text-dark" asp-area="Create Bill" asp-controller="EBill" asp-action="Create">
-                                <i class="bi bi-receipt"></i>
-                                Create Bill
-                            </a>
-
-                        </li>
-
-                    }
-
-
-                    @if (SignInManager.IsSignedIn(User) && User.IsInRole("Administrator"))
-                    {
-                        <li>
-                            <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="Index">
-                                <i class="bi bi-person-lines-fill"></i>
-                                Users
-                            </a>
-                        </li>
-
-                        <li>
-                            <a class="nav-link text-dark" asp-area="View Bills" asp-controller="EBill" asp-action="Index">
-                                <i class="bi bi-people"></i>
-                                View Bill
-                            </a>
-                        </li>
-
-
-                        <li>
-                            <a class="nav-link text-dark" asp-area="Identity" asp-page="/Clients/Index">
-                                <i class="bi bi-person-plus"></i>
-                                Add Employes
-                            </a>
-                        </li>
-
-                    }
-
-                    @if (SignInManager.IsSignedIn(User))
-                    {
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Dashboard" asp-action="Index">
-                                <i class="bi bi-activity"></i>
-                                Dashboard
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Category" asp-action="Index">
-                                <i class="bi bi-card-list"></i>
-                                Categories
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Transaction" asp-action="Index">
-                                <i class="bi bi-wallet-fill"></i>
-                                Transaction
-                            </a>
-                        </li>
-
-                    }
-                </ul>
-                <hr>
-
-
+                            }
+                        
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-sm-2" type="search" placeholder="Search">
+                        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
             </div>
+        </nav>
+
+        
 
 
 

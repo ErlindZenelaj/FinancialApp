@@ -14,7 +14,6 @@
     <None Remove="Core\ViewModel\" />
     <None Remove="System.Data.SqlClient" />
     <None Remove="Views\" />
-    <None Remove="Areas\Identity\Pages\Clients\" />
     <None Remove="Microsoft.AspNetCore.Identity.EntityFrameworkCore" />
     <None Remove="Views\EBill\" />
     <None Remove="Content\" />
@@ -31,6 +30,8 @@
     <None Remove="Views\Category\" />
     <None Remove="Microsoft.EntityFrameworkCore.Sqlite" />
     <None Remove="Views\Dashboard\" />
+    <None Remove="Areas\Identity\Pages\Clients\" />
+    <None Remove="Properties\PublishProfiles\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="bootstrap" Version="5.2.1" />
@@ -50,10 +51,11 @@
   <ItemGroup>
     <Folder Include="Core\Repositories\" />
     <Folder Include="Core\ViewModel\" />
-    <Folder Include="Areas\Identity\Pages\Clients\" />
     <Folder Include="Areas\Scripts\" />
     <Folder Include="Views\Category\" />
     <Folder Include="Views\Dashboard\" />
+    <Folder Include="Areas\Identity\Pages\Clients\" />
+    <Folder Include="Properties\PublishProfiles\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="wwwroot\Content\Images\Photo1.jpeg" />

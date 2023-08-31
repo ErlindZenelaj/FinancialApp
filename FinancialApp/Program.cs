@@ -28,6 +28,17 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ApplicationDb>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("DevConnection")));
 
+var connection = String.Empty;
+if (builder.Environment.IsDevelopment())
+{
+    builder.Configuration.AddEnvironmentVariables().AddJsonFile("appsettings.Development.json");
+    connection = builder.Configuration.GetConnectionString("AZURE_SQL_CONNECTIONSTRING");
+}
+else
+{
+    connection = Environment.GetEnvironmentVariable("AZURE_SQL_CONNECTIONSTRING");
+}
+
 #region Authorization
 
 AddAuthorizationPolicies();
